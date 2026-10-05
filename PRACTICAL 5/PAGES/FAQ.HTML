@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Student Hub - FAQ</title>
+    <link rel="stylesheet" href="../CSS/style.css" />
+  </head>
+
+  <body>
+    <!-- ── NOTIFICATION BANNER (Component 4) ─────────────────────────── -->
+    <div class="sh-banner sh-banner-warning"
+         data-banner-key="faq-tip"
+         data-auto-dismiss="10000"
+         role="alert"
+         aria-live="polite">
+      <span class="sh-banner-msg">
+        💡 <strong>Tip:</strong> Click any question below to expand the answer. Click "Details" for more information.
+      </span>
+      <button class="sh-banner-close" aria-label="Dismiss tip">×</button>
+    </div>
+
+    <div class="container faq-container">
+      <div class="header-top-row">
+        <span class="badge">Help Center</span>
+        <!-- Light / Dark Theme Switcher (Component 6) -->
+        <button type="button" class="theme-toggle-btn" aria-label="Toggle dark/light theme" aria-pressed="false">
+          <span class="theme-icon">🌙</span>
+          <span class="theme-text">Dark mode</span>
+        </button>
+      </div>
+
+      <h1>STUDENT HUB</h1>
+      <h2>FAQ — Frequently Asked Questions</h2>
+
+      <!-- ── COLLAPSIBLE FAQ ACCORDION (Component 1) ───────────────────── -->
+      <ul class="faq-accordion" role="list" aria-label="Frequently Asked Questions">
+
+        <!-- Q1 -->
+        <li class="faq-item">
+          <button class="faq-question" type="button">
+            <span>Q1. How do I log in to the Student Portal?</span>
+            <span class="faq-chevron" aria-hidden="true">▼</span>
+          </button>
+          <div class="faq-answer" role="region">
+            Enter your registered <strong>username</strong> and <strong>password</strong>,
+            then click the <em>Login</em> button on the login page.
+            Make sure Caps Lock is off and that you are using your university email.
+            <div class="faq-answer-actions">
+              <button class="faq-read-more"
+                      data-modal-open="modal-login"
+                      type="button">Details ↗</button>
+              <a href="LOGIN.HTML" class="faq-read-more">Go to Login →</a>
+            </div>
+          </div>
+        </li>
+
+        <!-- Q2 -->
+        <li class="faq-item">
+          <button class="faq-question" type="button">
+            <span>Q2. How can I reset my password?</span>
+            <span class="faq-chevron" aria-hidden="true">▼</span>
+          </button>
+          <div class="faq-answer" role="region">
+            Click the <strong>Forgot Password</strong> link on the login page and follow the
+            step-by-step instructions sent to your registered email address.
+            Password reset links expire in <strong>15 minutes</strong>.
+            <div class="faq-answer-actions">
+              <button class="faq-read-more"
+                      data-modal-open="modal-password"
+                      type="button">Details ↗</button>
+            </div>
+          </div>
+        </li>
+
+        <!-- Q3 -->
+        <li class="faq-item">
+          <button class="faq-question" type="button">
+            <span>Q3. How do I check my attendance?</span>
+            <span class="faq-chevron" aria-hidden="true">▼</span>
+          </button>
+          <div class="faq-answer" role="region">
+            After logging in, navigate to the <strong>Dashboard</strong> and click
+            <em>Attendance</em> in the sidebar. You can view subject-wise attendance
+            percentages and download the report as a PDF.
+            <div class="faq-answer-actions">
+              <button class="faq-read-more"
+                      data-modal-open="modal-attendance"
+                      type="button">Details ↗</button>
+              <a href="DASHBOARD.HTML" class="faq-read-more">Open Dashboard →</a>
+            </div>
+          </div>
+        </li>
+
+        <!-- Q4 -->
+        <li class="faq-item">
+          <button class="faq-question" type="button">
+            <span>Q4. How do I view my exam results?</span>
+            <span class="faq-chevron" aria-hidden="true">▼</span>
+          </button>
+          <div class="faq-answer" role="region">
+            Click the <strong>Results</strong> section in your Dashboard.
+            Results are published within <strong>72 hours</strong> of the exam being finalised.
+            You may also download a digitally signed mark sheet for official use.
+            <div class="faq-answer-actions">
+              <button class="faq-read-more"
+                      data-modal-open="modal-results"
+                      type="button">Details ↗</button>
+            </div>
+          </div>
+        </li>
+
+        <!-- Q5 -->
+        <li class="faq-item">
+          <button class="faq-question" type="button">
+            <span>Q5. How can I contact the college support team?</span>
+            <span class="faq-chevron" aria-hidden="true">▼</span>
+          </button>
+          <div class="faq-answer" role="region">
+            Go to the <strong>Contact Us</strong> page or email the support team at
+            <a href="mailto:support@charusat.ac.in">support@charusat.ac.in</a>.
+            Support hours are <strong>Mon–Sat, 9 AM – 5 PM</strong>.
+            <div class="faq-answer-actions">
+              <button class="faq-read-more"
+                      data-modal-open="modal-contact"
+                      type="button">Details ↗</button>
+              <a href="CONTACT.HTML" class="faq-read-more">Contact Page →</a>
+            </div>
+          </div>
+        </li>
+
+        <!-- Q6 -->
+        <li class="faq-item">
+          <button class="faq-question" type="button">
+            <span>Q6. How do I register for a new semester?</span>
+            <span class="faq-chevron" aria-hidden="true">▼</span>
+          </button>
+          <div class="faq-answer" role="region">
+            Visit the <strong>Registration</strong> page before the published deadline.
+            Complete all mandatory fields and ensure your fee payment is confirmed.
+            You will receive an email confirmation within 24 hours.
+            <div class="faq-answer-actions">
+              <button class="faq-read-more"
+                      data-modal-open="modal-register"
+                      type="button">Details ↗</button>
+              <a href="REGISTER.HTML" class="faq-read-more">Register Now →</a>
+            </div>
+          </div>
+        </li>
+
+      </ul>
+      <!-- /accordion -->
+
+      <br />
+      <a href="DASHBOARD.HTML" class="home-btn">Dashboard</a>
+      <a href="../home.html" class="home-btn">← Back to Home</a>
+
+      <hr />
+      <footer>
+        <p>&copy; 2026 Student Hub. All Rights Reserved.</p>
+      </footer>
+    </div><!-- /container -->
+
+
+    <!-- ═══════════════════════════════════════════════════════════════════
+         MODAL POPUPS (Component 2)
+         ═══════════════════════════════════════════════════════════════════ -->
+
+    <!-- Modal: Login Help -->
+    <div id="modal-login" class="sh-modal" role="dialog" aria-modal="true" aria-labelledby="modal-login-title">
+      <div class="sh-modal-content">
+        <button class="sh-modal-close" aria-label="Close">×</button>
+        <div class="sh-modal-icon">🔐</div>
+        <h3 id="modal-login-title">Logging In to Student Hub</h3>
+        <p>
+          Use your <strong>university-issued student ID</strong> (e.g. <code>25DCE124</code>) as
+          your username. Your default password is your <strong>date of birth</strong> in
+          <code>DDMMYYYY</code> format — you will be prompted to change it on first login.
+        </p>
+        <p>
+          If your account is locked after 5 failed attempts, please wait
+          <strong>30 minutes</strong> or contact the IT Help Desk.
+        </p>
+        <div class="sh-modal-footer">
+          <button class="sh-btn-outline" onclick="SHModal.close(document.getElementById('modal-login'))">Close</button>
+          <a href="LOGIN.HTML" class="sh-btn-primary" style="text-decoration:none;">Go to Login</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal: Password Reset -->
+    <div id="modal-password" class="sh-modal" role="dialog" aria-modal="true" aria-labelledby="modal-password-title">
+      <div class="sh-modal-content">
+        <button class="sh-modal-close" aria-label="Close">×</button>
+        <div class="sh-modal-icon">🔑</div>
+        <h3 id="modal-password-title">Resetting Your Password</h3>
+        <p>
+          <strong>Step 1:</strong> Click <em>Forgot Password</em> on the Login page.<br/>
+          <strong>Step 2:</strong> Enter your registered university email address.<br/>
+          <strong>Step 3:</strong> Check your inbox for the reset link (valid for 15 min).<br/>
+          <strong>Step 4:</strong> Set a new password — must be at least 6 characters and include a letter and a number.
+        </p>
+        <p>If you don't receive the email within 5 minutes, check your spam folder or contact <a href="mailto:support@charusat.ac.in">support@charusat.ac.in</a>.</p>
+        <div class="sh-modal-footer">
+          <button class="sh-btn-primary" onclick="SHModal.close(document.getElementById('modal-password'))">Got it!</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal: Attendance -->
+    <div id="modal-attendance" class="sh-modal" role="dialog" aria-modal="true" aria-labelledby="modal-attendance-title">
+      <div class="sh-modal-content">
+        <button class="sh-modal-close" aria-label="Close">×</button>
+        <div class="sh-modal-icon">📊</div>
+        <h3 id="modal-attendance-title">Checking Your Attendance</h3>
+        <p>
+          Your attendance is updated every weekday by <strong>6 PM</strong>. You need a minimum
+          of <strong>75 %</strong> attendance per subject to be eligible to sit the semester exam.
+        </p>
+        <p>
+          A red indicator means you are below the threshold. You may raise a grievance from the
+          Dashboard if you believe there is an error.
+        </p>
+        <div class="sh-modal-footer">
+          <button class="sh-btn-outline" onclick="SHModal.close(document.getElementById('modal-attendance'))">Close</button>
+          <a href="DASHBOARD.HTML" class="sh-btn-primary" style="text-decoration:none;">Open Dashboard</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal: Results -->
+    <div id="modal-results" class="sh-modal" role="dialog" aria-modal="true" aria-labelledby="modal-results-title">
+      <div class="sh-modal-content">
+        <button class="sh-modal-close" aria-label="Close">×</button>
+        <div class="sh-modal-icon">📋</div>
+        <h3 id="modal-results-title">Viewing Exam Results</h3>
+        <p>
+          Results are published on the Dashboard under <em>My Results → Semester</em>.
+          Grades are displayed as <strong>SPI</strong> (Semester Performance Index) and
+          <strong>CPI</strong> (Cumulative Performance Index).
+        </p>
+        <p>
+          To download your official mark sheet, click the <strong>Download PDF</strong> button.
+          The document is digitally signed and valid for official purposes.
+        </p>
+        <div class="sh-modal-footer">
+          <button class="sh-btn-primary" onclick="SHModal.close(document.getElementById('modal-results'))">Understood</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal: Contact -->
+    <div id="modal-contact" class="sh-modal" role="dialog" aria-modal="true" aria-labelledby="modal-contact-title">
+      <div class="sh-modal-content">
+        <button class="sh-modal-close" aria-label="Close">×</button>
+        <div class="sh-modal-icon">📞</div>
+        <h3 id="modal-contact-title">Contacting Support</h3>
+        <p><strong>Email:</strong> <a href="mailto:support@charusat.ac.in">support@charusat.ac.in</a></p>
+        <p><strong>Phone:</strong> +91-2697-265 000 (Ext. 101)</p>
+        <p><strong>Office:</strong> IT Help Desk, Admin Block, CHARUSAT Campus, Changa – 388421</p>
+        <p><strong>Hours:</strong> Mon–Sat, 9 AM – 5 PM (except public holidays)</p>
+        <div class="sh-modal-footer">
+          <button class="sh-btn-outline" onclick="SHModal.close(document.getElementById('modal-contact'))">Close</button>
+          <a href="CONTACT.HTML" class="sh-btn-primary" style="text-decoration:none;">Contact Form</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal: Register -->
+    <div id="modal-register" class="sh-modal" role="dialog" aria-modal="true" aria-labelledby="modal-register-title">
+      <div class="sh-modal-content">
+        <button class="sh-modal-close" aria-label="Close">×</button>
+        <div class="sh-modal-icon">📝</div>
+        <h3 id="modal-register-title">Semester Registration Guide</h3>
+        <p>
+          Registration opens <strong>2 weeks</strong> before the semester start date.
+          Complete the following to finish your registration:
+        </p>
+        <p>
+          ✅ Fill in personal details<br/>
+          ✅ Select your courses / electives<br/>
+          ✅ Upload required documents<br/>
+          ✅ Pay semester fee via the payment portal<br/>
+          ✅ Submit — you will receive a confirmation email.
+        </p>
+        <div class="sh-modal-footer">
+          <button class="sh-btn-outline" onclick="SHModal.close(document.getElementById('modal-register'))">Close</button>
+          <a href="REGISTER.HTML" class="sh-btn-primary" style="text-decoration:none;">Register Now</a>
+        </div>
+      </div>
+    </div>
+
+    <script src="../JS/SCRIPT.JS"></script>
+    <script src="../JS/dynamic-ui.js"></script>
+  </body>
+</html>
